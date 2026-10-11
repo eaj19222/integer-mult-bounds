@@ -1,0 +1,2 @@
+all 120 ports x 9 exact binary data-route checks PASS
+candidate coarse 0.000999632926176283 halving 2 row provisional 15445

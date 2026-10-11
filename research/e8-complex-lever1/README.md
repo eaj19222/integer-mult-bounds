@@ -26,6 +26,21 @@ Slots carry 88% of the excess, with 4 to 5 climbs each. About 72% of slot occurr
 source-span lower bound. Frame-only moves are near exhausted, so further gains need re-ordering or coordinated multi-gate
 frame changes. Exact cancellation-aware supports loosen only 28 of 2,001 gate bounds, so that is not a lever.
 
+## Results so far
+
+- **#377's full verifier passes on #378's unit** ([pr377-replay/](pr377-replay/README.md)). All seven stages pass with the unit
+  substituted, including the local admission, the 948-frame Clifford check, the 1,242,864-event template and the finite
+  invoice. The template audit reproduces #384's b exactly. This covers the checks #384 lists as not re-run.
+- **Frame-only re-timing of #378's unit is exhausted (negative result).** These searches all keep the gate order and
+  operator fixed:
+  - 97 iterations of iterated local search with #378's own move family;
+  - 75 CP-SAT windows of 400 gates and 30 of 800 gates, each solved over all frames between its source-span and
+    neighbour bounds (`tools/lns.py`).
+
+  None found an improvement; every window solved was proven optimal. As a control, the same solver on Sussman's
+  original unit recovers greedy re-timing's gain and exceeds it with a larger window. Further local gains need changes
+  to gate order or to the operator. #377's pipeline above can admit such a unit, at about 4.5 minutes per candidate.
+
 ## Tools (`tools/`)
 
 Run from the repository root with Python 3.11+ (standard library only). `P=research/e8-far-nine-complex`.
@@ -38,6 +53,7 @@ Run from the repository root with Python 3.11+ (standard library only). `P=resea
 | `tight.py CERT P/code` | frame slack against own support and gate lower bound |
 | `exactsup.py CERT P/code` | union vs exact (cancellation-aware) support lower bounds |
 | `ils.py P START OUTDIR SEED ITERS` | iterated local search around #378's move family: Metropolis kick, greedy descent |
+| `lns.py P START OUT SEED ROUNDS WINDOW [SECONDS]` | CP-SAT large-neighbourhood frame re-optimisation, fixed order and operator (needs `ortools`) |
 
 ## Credits
 

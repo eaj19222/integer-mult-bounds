@@ -1,0 +1,8 @@
+Checking the complex program: gx.check1 with the exact scalar identity, and the gxcore mirror.
+Checking every complex source label and paid child.
+Deriving both complex scalar words and temporary lifetimes.
+Merging scalar events, exact frames and all final climbs.
+Recomputing complex cover, router, precision and row inequalities.
+PASS actual dirty scalar word forward 10886
+PASS actual dirty scalar word backward 11669
+PASS corrected complete invoice 990 11162

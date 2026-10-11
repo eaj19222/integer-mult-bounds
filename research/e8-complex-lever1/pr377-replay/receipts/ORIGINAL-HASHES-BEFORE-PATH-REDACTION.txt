@@ -1,0 +1,2 @@
+607fad33d31b6f000223113010d58bf7c165194c16622c8fc80d7152bf3ea877  GLOBAL-REVIEW.json (as generated, before replacing the work-directory prefix with <work>)
+eb718b4459613a70cbb1a07c2b05f8fa1065fa3f68339ba080cfefd5a649c0c2  logs/global-template-and-invoice.log.txt (as generated, before replacing the work-directory prefix with <work>)
