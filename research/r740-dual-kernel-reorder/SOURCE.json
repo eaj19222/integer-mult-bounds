@@ -1,0 +1,14 @@
+{
+ "parent_pr": 466,
+ "parent_head": "c2f8e18",
+ "packages": {
+  "r740-dual-kernel": {
+   "MANIFEST.json": "b4c8b2f34b950d1f3a09aacaac119b5745796fb89ea08d24455abc24a3d1c159",
+   "SOURCE.json": "e9aa01762c3ef08b97df664a1f8d1d47c0075b661df0f1f136612776bee98628",
+   "data/word.json.gz": "4e0e45082510c35af95e27e79ffda272b61ae97121685d90037df7901faf8617"
+  },
+  "e8-r740-replica32": {
+   "code/e8core.py": "1cb286196c1530d06f50f0997febc5993b388f33464e295611b920ba30a24eeb"
+  }
+ }
+}
