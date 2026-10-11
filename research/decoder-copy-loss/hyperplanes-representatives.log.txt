@@ -1,0 +1,9 @@
+hyperplanes found by size (lines inside: count): {14: 12, 16: 17, 22: 65, 23: 78, 28: 294, 37: 338, 42: 706, 63: 120} 268s
+hyperplane with 63 lines (120 distinct found): INFEASIBLE (clique-normalized: True)
+hyperplane with 42 lines (706 distinct found): INFEASIBLE (clique-normalized: True)
+hyperplane with 37 lines (338 distinct found): INFEASIBLE (clique-normalized: True)
+hyperplane with 28 lines (294 distinct found): INFEASIBLE (clique-normalized: True)
+hyperplane with 23 lines (78 distinct found): INFEASIBLE (clique-normalized: True)
+hyperplane with 22 lines (65 distinct found): INFEASIBLE (clique-normalized: True)
+hyperplane with 16 lines (17 distinct found): INFEASIBLE (clique-normalized: True)
+hyperplane with 14 lines (12 distinct found): INFEASIBLE (clique-normalized: True)
