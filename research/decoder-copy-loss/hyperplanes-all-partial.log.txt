@@ -1,0 +1,3 @@
+hyperplanes found by size (lines inside: count): {14: 12, 16: 17, 22: 65, 23: 78, 28: 294, 37: 338, 42: 706, 63: 120} 268s
+size 63 {('INFEASIBLE', True): 120}
+size 42 {('INFEASIBLE', True): 706}
